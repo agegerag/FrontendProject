@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54352/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54352/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54352/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Group_Project" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetItems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllItems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnSpecialCakes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnSpecialCakes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnSpecialCakes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnSpecialCakesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnAnniversryCakes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnAnniversryCakes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnAnniversryCakes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnAnniversryCakesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnBirthdayCakes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnBirthdayCakes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnBirthdayCakes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnBirthdayCakesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnBuy1Cakes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnBuy1Cakes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnBuy1Cakes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnBuy1CakesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFeatured_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeatured" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFeatured_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeaturedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnPromotion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnPromotion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnPromotion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnPromotionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnGraduation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnGraduation" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetOnGraduation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnGraduationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CalcDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalcDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CalcDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalcDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategory" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetItem" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetItems" message="tns:IService1_GetItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetItemsResponse" message="tns:IService1_GetItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllItems" message="tns:IService1_GetAllItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllItemsResponse" message="tns:IService1_GetAllItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnSpecialCakes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetOnSpecialCakes" message="tns:IService1_GetOnSpecialCakes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetOnSpecialCakesResponse" message="tns:IService1_GetOnSpecialCakes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnAnniversryCakes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetOnAnniversryCakes" message="tns:IService1_GetOnAnniversryCakes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetOnAnniversryCakesResponse" message="tns:IService1_GetOnAnniversryCakes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnBirthdayCakes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetOnBirthdayCakes" message="tns:IService1_GetOnBirthdayCakes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetOnBirthdayCakesResponse" message="tns:IService1_GetOnBirthdayCakes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnBuy1Cakes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetOnBuy1Cakes" message="tns:IService1_GetOnBuy1Cakes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetOnBuy1CakesResponse" message="tns:IService1_GetOnBuy1Cakes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeatured">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetFeatured" message="tns:IService1_GetFeatured_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetFeaturedResponse" message="tns:IService1_GetFeatured_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnPromotion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetOnPromotion" message="tns:IService1_GetOnPromotion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetOnPromotionResponse" message="tns:IService1_GetOnPromotion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnGraduation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetOnGraduation" message="tns:IService1_GetOnGraduation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetOnGraduationResponse" message="tns:IService1_GetOnGraduation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CalcDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CalcDiscount" message="tns:IService1_CalcDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CalcDiscountResponse" message="tns:IService1_CalcDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCategory" message="tns:IService1_GetCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCategoryResponse" message="tns:IService1_GetCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetItem" message="tns:IService1_GetItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetItemResponse" message="tns:IService1_GetItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegUser" message="tns:IService1_RegUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegUserResponse" message="tns:IService1_RegUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CheckUser" message="tns:IService1_CheckUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CheckUserResponse" message="tns:IService1_CheckUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditUser" message="tns:IService1_EditUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditUserResponse" message="tns:IService1_EditUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUser" message="tns:IService1_getUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserResponse" message="tns:IService1_getUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetItems">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllItems">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnSpecialCakes">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetOnSpecialCakes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnAnniversryCakes">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetOnAnniversryCakes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnBirthdayCakes">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetOnBirthdayCakes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnBuy1Cakes">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetOnBuy1Cakes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeatured">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetFeatured" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnPromotion">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetOnPromotion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnGraduation">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetOnGraduation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcDiscount">
+      <soap:operation soapAction="http://tempuri.org/IService1/CalcDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategory">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItem">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/RegUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/CheckUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/getUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:54352/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
